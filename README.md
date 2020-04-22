@@ -1,7 +1,9 @@
 # saveMock using
-```json
-devServer: {
-  proxy: {
-    onProxyRes: saveMock('mock/data')
+```webpack
+module.exports = {
+  devServer: {
+    proxy: {
+      onProxyRes: saveMock('mock/data')
+    }
   }
 }
